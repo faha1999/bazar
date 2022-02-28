@@ -1,0 +1,40 @@
+.categories {
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+
+    .box {
+      padding: 3rem 2rem;
+      border-radius: 0.5rem;
+      background: #fff;
+      box-shadow: $box-shadow;
+      outline: $outline;
+      outline-offset: -1rem;
+      text-align: center;
+
+      &:hover {
+        outline: $outline-hover;
+        outline-offset: 0rem;
+      }
+
+      img {
+        margin: 1rem 0;
+        height: 15rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        color: $black;
+        line-height: 1.8;
+      }
+
+      p {
+        font-size: 1.7rem;
+        color: $light-color;
+        line-height: 1.8;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
