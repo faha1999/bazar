@@ -91,3 +91,13 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .box-container .box .payment-img {
+    margin: 2rem auto;
+  }
+}
