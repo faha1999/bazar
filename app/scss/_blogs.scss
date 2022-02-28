@@ -1,0 +1,61 @@
+.blogs {
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+    .box {
+      overflow: hidden;
+      border-radius: 0.5rem;
+      box-shadow: $box-shadow;
+      background: #fff;
+
+      img {
+        height: 25rem;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .content {
+        padding: 2rem;
+
+        .icons {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-bottom: 1.5rem;
+          margin-bottom: 1rem;
+          border-bottom: $border;
+
+          a {
+            color: $light-color;
+            font-size: 1.5rem;
+
+            &:hover {
+              color: $black;
+            }
+
+            i {
+              color: $orange;
+              padding-right: 0.5rem;
+            }
+          }
+        }
+
+        h3 {
+          line-height: 1.8;
+          color: $black;
+          font-size: 2.2rem;
+          padding: 0.5rem 0;
+        }
+
+        p {
+          line-height: 1.8;
+          color: $light-color;
+          font-size: 1.5rem;
+          padding: 0.5rem 0;
+        }
+      }
+    }
+  }
+}
