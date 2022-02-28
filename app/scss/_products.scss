@@ -1,0 +1,51 @@
+.products {
+  .product-slider {
+    padding: 1rem;
+
+    &:first-child {
+      margin-bottom: 2rem;
+    }
+
+    .box {
+      background: #fff;
+      border-radius: 0.5rem;
+      text-align: center;
+      padding: 3rem 2rem;
+      outline-offset: -1rem;
+      outline: $outline;
+      box-shadow: $box-shadow;
+      transition: 0.2s linear;
+
+      &:hover {
+        outline-offset: 0rem;
+        outline: $outline-hover;
+        box-shadow: 0 0rem 1.5rem rgba(255, 120, 0, 0.3);
+
+        img {
+          transform: scale(1.2);
+        }
+      }
+
+      img {
+        height: 20rem;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+        color: $black;
+      }
+
+      .price {
+        font-size: 2rem;
+        color: $light-color;
+        padding: 0.5rem 0;
+      }
+
+      .stars i {
+        font-size: 1.7rem;
+        color: $orange;
+        padding: 0.5rem 0;
+      }
+    }
+  }
+}
