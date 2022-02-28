@@ -1,0 +1,45 @@
+.review {
+  .review-slider {
+    padding: 1rem;
+
+    .box {
+      background: #fff;
+      border-radius: 0.5rem;
+      text-align: center;
+      padding: 3rem 2rem;
+      outline-offset: -1rem;
+      outline: $outline;
+      box-shadow: $box-shadow;
+      transition: 0.2s linear;
+
+      &:hover {
+        outline: $outline-hover;
+        outline-offset: 0rem;
+      }
+
+      img {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+      }
+
+      p {
+        padding: 1rem 0;
+        line-height: 1.8;
+        color: $light-color;
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        padding-bottom: 0.5rem;
+        color: $black;
+        font-size: 2.2rem;
+      }
+
+      .stars i {
+        color: $orange;
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
