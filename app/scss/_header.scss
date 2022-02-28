@@ -1,0 +1,246 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: #fff;
+  box-shadow: $box-shadow;
+
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: $black;
+    i {
+      color: $orange;
+    }
+  }
+
+  .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: $black;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .icons {
+    div {
+      height: 4.5rem;
+      width: 4.5rem;
+      line-height: 4.5rem;
+      border-radius: 0.5rem;
+      background: #eee;
+      color: $black;
+      font-size: 2rem;
+      margin-left: 0.3rem;
+      cursor: pointer;
+      text-align: center;
+
+      &:hover {
+        background: $orange;
+        color: #fff;
+      }
+    }
+  }
+
+  .search-form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: $box-shadow;
+
+    &.active {
+      right: 2rem;
+      transition: 0.4s linear;
+    }
+
+    input {
+      height: 100%;
+      width: 100%;
+      background: none;
+      text-transform: none;
+      font-size: 1.6rem;
+      color: $black;
+      padding: 0 1.5rem;
+    }
+
+    label {
+      font-size: 2.2rem;
+      padding-right: 1.5rem;
+      color: $black;
+      cursor: pointer;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  .shopping-cart {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: $box-shadow;
+    width: 35rem;
+    background: #fff;
+
+    &.active {
+      right: 2rem;
+      transition: 0.4s linear;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      position: relative;
+      margin: 1rem 0;
+
+      img {
+        height: 10rem;
+      }
+
+      .fa-trash {
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        cursor: pointer;
+        color: $light-color;
+        transform: translateY(-50%);
+
+        &:hover {
+          color: $orange;
+        }
+      }
+
+      .content {
+        h3 {
+          color: $black;
+          font-size: 1.7rem;
+          padding-bottom: 1rem;
+        }
+
+        span {
+          color: $light-color;
+          font-size: 1.6rem;
+
+          .quantity {
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
+
+    .total {
+      font-size: 2.5rem;
+      padding: 1rem 0;
+      text-align: center;
+      color: $black;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      margin: 1rem;
+    }
+  }
+
+  .login-form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 35rem;
+    box-shadow: $box-shadow;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    text-align: center;
+
+    &.active {
+      right: 2rem;
+      transition: 0.4s linear;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      color: $black;
+    }
+
+    .box {
+      width: 100%;
+      margin: 0.7rem 0;
+      background: #eee;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      font-size: 1.6rem;
+      color: $black;
+      text-transform: none;
+    }
+
+    p {
+      font-size: 1.4rem;
+      padding: 0.5rem 0;
+      color: $light-color;
+
+      a {
+        color: $orange;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#menu-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header {
+    .search-form {
+      width: 90%;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 110%;
+      right: -110%;
+      width: 30rem;
+      box-shadow: $box-shadow;
+      border-radius: 0.5rem;
+      background: #fff;
+
+      &.active {
+        right: 2rem;
+        transition: 0.4s linear;
+      }
+
+      a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+      }
+    }
+  }
+}
