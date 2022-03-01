@@ -25,6 +25,7 @@
     margin: 0 1rem;
     color: $black;
 
+    &.active,
     &:hover {
       color: $orange;
     }
